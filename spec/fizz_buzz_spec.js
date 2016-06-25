@@ -11,5 +11,8 @@ describe("fizz_buzz", function() {
   });
   it("returns 'fizzbuzz' if number is divisible by 15", function(){
     expect(fizz_buzz(15)).toEqual('FizzBuzz');
-  })
+  });
+  it("Throws 'Oops, the number must be greater than 0", function(){
+    expect(function() { fizz_buzz(0); } ).toThrow(new Error('Oops, the number must be greater than 0'));
+  });
 });
