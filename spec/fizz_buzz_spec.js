@@ -1,13 +1,12 @@
-describe("fizz_buzz", function(){
-  var subject;
-
-  beforeEach(function(){
-    subject = new fizz_buzz();
-  });
+describe("fizz_buzz", function() {
 
   it("returns number if no conditions are met", function() {
-    number = 1;
-    expect(number).toBe(1);
+    expect(fizz_buzz(1)).toEqual(1);
   });
-
+  it("returns 'fizz' if number is divisible by 3", function() {
+    expect(fizz_buzz(3)).toEqual('Fizz');
+  });
+  it("returns 'buzz' if number is divisible by 5", function() {
+    expect(fizz_buzz(5)).toEqual('Buzz');
+  })
 });
