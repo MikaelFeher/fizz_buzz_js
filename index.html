@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+  </head>
+  <body>
+    <input type="text" id="number" placeholder="Enter a number">
+    <input type="button" href="#" id="button" value="Click Me!">
+    <span id = "show_result"></span>
+
+    <script src="assets/js/fizz_buzz.js"></script>
+    <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('#button').click(function(){
+        var number = parseFloat($('#number').val());
+        $('#show_result').html(fizz_buzz(number));
+      });
+    });
+    </script>
+  </body>
+</html>
