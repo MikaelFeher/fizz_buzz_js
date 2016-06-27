@@ -5,14 +5,38 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FizzBuzz</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
   </head>
-  <body>
-    <input type="text" id="number" placeholder="Enter a number">
-    <input type="button" href="#" id="button" value="Click Me!">
-    <span id = "show_result"></span>
+  <body style="font-family: Helvetica; ">
+    <div class="main">
+      <div class="small-10 columns small-offset-1 columns medium-10 columns medium-offset-1 columns large-6 columns large-offset-3 columns">
+        <h2 style="text-align: center; background-color: #530FAD;">FizzBuzz</h2>
+        <p>FizzBuzz is a simple numbercheck. You enter a number in the box below, if that number is divisable by 3 you get "Fizz", if it is divisable by 5 you get "Buzz", if the number is divisable by both 3 AND 5 you get "FizzBuzz". Give it a try!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-6 columns small-offset-3 columns medium-4 columns medium-offset-4 large-2 columns large-offset-5 columns">
+        <input type="text" id="number" style="text-align: center" placeholder="Enter a number">
+      </div>
+    </div>
+    <div class="row2">
+      <div class="small-4 columns small-offset-4 medium-4 columns medium-offset-4 columns large-2 columns large-offset-5" style="text-align: center;">
+        <input type="button" href="#" class="success button" id="button" value="Fizz My Buzz!">
+      </div>
+    </div>
+
+    <div class="result" style="text-align: center; font-size: 300%; padding-top: 10px;">
+      <div class="small-10 columns small-offset-1 columns medium-10 columns medium-offset-1 columns large-6 columns large-offset-3 columns">
+        <span id="show_result"></span>
+      </div>
+    </div>
 
     <script src="assets/js/fizz_buzz.js"></script>
     <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
 
     <script type="text/javascript">
     $(document).ready(function(){
